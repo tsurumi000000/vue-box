@@ -4,33 +4,72 @@
     <!-- <router-link to="/index/show">ルーム詳細</router-link>
     <router-view/> -->
     <b-container class="bv-example-row">
-    <b-row>
-        <b-col class="left">
-          <div class="form_content">
-            <b-form inline>
-              <div>
-                <!-- <label class="sr-only" for="inlineFormInputName2">Name</label> -->
-                <b-input class="mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Jane Doe" />
-              </div>
-              <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-              <b-input-group left="@" class="mb-2 mr-sm-2 mb-sm-0">
-                <b-input id="inlineFormInputGroupUsername2" placeholder="Username" />
-              </b-input-group>
-              <b-input-group left="@" class="mb-2 mr-sm-2 mb-sm-0">
-                <b-input id="inlineFormInputGroupUsername2" placeholder="Username" />
-              </b-input-group>
-              <b-input-group left="@" class="mb-2 mr-sm-2 mb-sm-0">
-                <b-input id="inlineFormInputGroupUsername2" placeholder="Username" />
-              </b-input-group>
-            </b-form>
-            <b-button class="search-botton" variant="primary">検索</b-button>
-          </div> 
-        </b-col>
-        <b-col class="right">
+      <b-row class="content">
+          <b-col class="left">
 
-        </b-col>
-    </b-row>
-</b-container>
+            <div class="form_content">
+              <b-form inline >
+                <div>
+                  <!-- <label class="sr-only" for="inlineFormInputName2">Name</label> -->
+                  <b-input class="mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="場所" />
+                </div>
+                <b-input-group left="@" class="mb-2 mr-sm-2 mb-sm-0">
+                  <b-input id="inlineFormInputGroupUsername2" placeholder="月日" />
+                </b-input-group>
+                <b-input-group left="@" class="mb-2 mr-sm-2 mb-sm-0">
+                  <b-input id="inlineFormInputGroupUsername2" placeholder="時間" />
+                </b-input-group>
+                <b-input-group left="@" class="mb-2 mr-sm-2 mb-sm-0">
+                  <b-input id="inlineFormInputGroupUsername2" placeholder="人数" />
+                </b-input-group>
+                <b-button class="search-botton" variant="primary" size="lg">検索</b-button>
+              </b-form>
+            </div>
+            
+              <div>
+                <div>
+                  <b-card  bg-variant="dark" text-variant="white" title="Hash hub 会議室">
+                    <p class="card-text">
+                      11/8
+                    </p>
+                    <p class="card-text">
+                      11:00~16:00
+                    </p>
+                    <p class="card-text">
+                      10人
+                    </p>
+                    <p class="card-text">
+                      0.5ETH
+                    </p>
+                    <b-button href="#/index/show" variant="primary" class="show_button">部屋詳細</b-button>
+                  </b-card>
+                </div>
+                <div>
+                  <b-card  bg-variant="dark" text-variant="white" title="Hash hub 会議室">
+                    <p class="card-text">
+                      11/8
+                    </p>
+                    <p class="card-text">
+                      11:00~16:00
+                    </p>
+                    <p class="card-text">
+                      10人
+                    </p>
+                    <p class="card-text">
+                      0.5ETH
+                    </p>
+                    <b-button href="#/index/show" variant="primary" class="show_button">部屋詳細</b-button>
+                  </b-card>
+                </div>
+              </div>
+             
+          </b-col>
+
+          <b-col class="right">
+
+          </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -38,17 +77,29 @@
 .bv-example-row {
   margin-top: 50px;
 }
+.content {
+  height: 1000px;
+}
 .left {
   background-color: aqua;
-  height: 300px;
-  width: 400px;
 }
 .form_content {
-  border-color: blanchedalmond;
   background-color: aliceblue;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 .search-botton {
-  margin-left: 340px;
+  margin-bottom: 30px;
+}
+.card {
+  margin-top: 15px;
+}
+.card-text {
+  display: inline-block;
+  margin-left: 5px;
+}
+.show_button {
+  margin-left: 10px;
 }
 .right {
   background-color: rgb(66, 175, 242);
